@@ -1,0 +1,21 @@
+
+    <fieldset>
+        <label for="tipo">Tipo</label>
+            <select id="tipo" data-ng-model="tipo">
+                <option value="CD">Extrato CD</option>
+                <option value="CC">Extrato CC</option>
+            </select>
+    </fieldset>
+    <div class="button" ngf-select="upload($files)" ngf-multiple="true">Select File</div>
+    Drop File:
+    <div ngf-drop ngf-select ng-model="files" class="drop-box" 
+        ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true"
+        accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" 
+        ngf-pattern="'image/*,application/pdf'">Drop csv</div>
+    <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+    Files:
+    <ul>
+        <li ng-repeat="f in files" style="font:smaller">{{f.name}} {{f.$error}} {{f.$errorParam}}</li>
+    </ul>
+    Upload Log:
+    <pre>{{log}}</pre>

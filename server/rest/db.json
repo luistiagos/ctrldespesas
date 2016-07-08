@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nome": "Jose",
+    "idade": 20,
+    "itens": [
+      {
+        "nome": "item1",
+        "preco": 100
+      },
+      {
+        "nome": "item2",
+        "preco": 200
+      },
+      {
+        "nome": "item3",
+        "preco": 400
+      },
+      {
+        "nome": "item4",
+        "preco": 50
+      }
+    ],
+    "_id": "56b0e4e25f29fa20046024ce"
+  },
+  {
+    "id": 2,
+    "nome": "Carlos",
+    "idade": 40,
+    "itens": [
+      {
+        "nome": "item1",
+        "preco": 74
+      },
+      {
+        "nome": "item2",
+        "preco": 82
+      },
+      {
+        "nome": "item3",
+        "preco": 50
+      },
+      {
+        "nome": "item4",
+        "preco": 140
+      }
+    ],
+    "_id": "56b0e5105f29fa20046024cf"
+  },
+  {
+    "id": 3,
+    "nome": "Joao",
+    "idade": 50,
+    "itens": [
+      {
+        "nome": "item1",
+        "preco": 740
+      },
+      {
+        "nome": "item2",
+        "preco": 80
+      },
+      {
+        "nome": "item3",
+        "preco": 30
+      },
+      {
+        "nome": "item4",
+        "preco": 22
+      }
+    ],
+    "_id": "56b0e53d5f29fa20046024d0"
+  },
+  {
+    "id": 4,
+    "nome": "Roberto",
+    "idade": 37,
+    "itens": [
+      {
+        "nome": "item1",
+        "preco": 123
+      },
+      {
+        "nome": "item2",
+        "preco": 44
+      },
+      {
+        "nome": "item3",
+        "preco": 50
+      },
+      {
+        "nome": "item4",
+        "preco": 220
+      }
+    ],
+    "_id": "56b0e5785f29fa20046024d1"
+  }
+]

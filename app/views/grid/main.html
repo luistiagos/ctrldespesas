@@ -1,0 +1,39 @@
+<div>
+	<fieldset>
+		<label for="mesVig">Mes Vigente</label>
+		<input type="text" id="mesVig" ng-model="filtro.mesVig" numeric-only></input>
+	</fieldset>
+	<fieldset>
+		<label for="tipo">Tipos</label>
+			<select id="tipo" data-ng-model="filtro.tipoHas">
+				<option value=""></option>
+				<option value="S">Contem</option>
+				<option value="N">Não Contem</option>
+			</select>
+			<tags-input  
+				ng-model="filtro.tipos"
+				class="bootstrap"
+				add-on-enter="true"
+				add-on-comma="true"
+				add-on-paste="true"
+				paste-split-pattern=",">
+			</tags-input>
+	</fieldset>
+</div>
+<div>
+	<button ng-click="gridId=1">Todos</button>
+	<button ng-click="gridId=2">Agrupado</button>
+	<button ng-click="gridId=3">Editar</button>
+	<span ng-show="gridId==3">
+		<input type="checkbox" ng-model="refletirTodos">Refletir em todos</input>
+	</span>
+</div>
+<div ui-grid="gridOptions" ng-show="gridId==2" ui-grid-pinning ui-grid-expandable class="grid"></div>
+<div ui-grid="gridAllOptions" ng-show="gridId==1" ui-grid-pinning class="grid"></div>
+<div ui-grid="gridEditableOptions" ng-show="gridId==3" ui-grid-edit ui-grid-row-edit ui-grid-cellNav class="grid">
+</div>
+<br/>
+Total:{{total}}
+<br/>
+<button ng-click="dashBoards()">Dashboards</button>
+

@@ -1,0 +1,23 @@
+
+<fieldset>
+  <!-- Form Name -->
+  <legend>Categoria</legend>
+
+<button id="adicionar" ng-click="adicionar()"  
+        class="btn btn-primary">Adicionar</button>
+<button id="remover" ng-click="remover()" 
+        ng-show="listSelecionados && listSelecionados.length > 0"
+        class="btn btn-primary">Remover</button>
+<br/>
+
+<div class="form-group" 
+  ng-show="gridOptions.data && gridOptions.data.length > 0">
+    <div ui-grid="gridOptions" ui-grid-edit ui-grid-selection class="grid"></div>
+</div>
+</fieldset>
+
+
+
+   
+
+

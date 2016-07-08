@@ -1,0 +1,18 @@
+<fieldset>
+	<label for="type">Tipo</label>
+	<select id="type" data-ng-model="dataValue">
+		<option ng-repeat="c in tiposChart | orderBy:descricao" value="{{c}}">{{c.nome}}</option>
+	</select>
+	<label for="style">Estilo</label>
+	<select id="style" data-ng-model="style">
+		<option ng-repeat="st in styles | orderBy:descricao" value="{{st.id}}">{{st.descricao}}</option>
+	</select>
+</fieldset>
+<div>
+	<div google-chart 
+		chart="pieChartTipo" 
+	 	style="border:1px inset black;padding:0;width:100%">
+	</div>
+	<div ui-grid="grid" ng-show="grid" ui-grid-pinning class="grid" style="width: 100%;height: 100%"></div>
+</div>
+<button ng-click="cancelar()">Fechar</button>
